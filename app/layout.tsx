@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { InstallPrompt } from "@/components/install-prompt";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import "./globals.css";
 
@@ -63,7 +62,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </div>
         <ServiceWorkerRegister />
-        <InstallPrompt />
       </body>
     </html>
   );
